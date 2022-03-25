@@ -1,4 +1,4 @@
-class Artist < ApplicationRecord
-  validate_presence_of :name
+class Maker < ApplicationRecord
+  validates_presence_of :name
   has_many :vehicles
 end

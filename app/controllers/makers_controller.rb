@@ -1,4 +1,4 @@
-class ArtistsController < ApplicationController
+class MakersController < ApplicationController
 
   def index
     @makers = Maker.all
