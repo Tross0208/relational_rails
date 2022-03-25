@@ -12,18 +12,18 @@ RSpec.describe Maker do
   end
 
 
-  describe 'instance methods' do
-    describe '' do
-      before :each do
-        @toyota = Maker.create!(name: 'Toyota')
-        @supra = @toyota.vehicles.create!(name: 'Supra')
-        @gt86= @toyota.vehicles.create!(name: 'GT86')
-      end
-      it '' do
-        expect(@mesa).to eq()
-      end
-    end
+  #describe 'instance methods' do
+  #  describe '' do
+  #    before :each do
+  #      @toyota = Maker.create!(name: 'Toyota')
+  #      @supra = @toyota.vehicles.create!(name: 'Supra')
+  #      @gt86= @toyota.vehicles.create!(name: 'GT86')
+  #    end
+  #    it '' do
+  #      expect(@mesa).to eq()
+  #    end
+  #  end
 
-  end
+  #end
 
 end

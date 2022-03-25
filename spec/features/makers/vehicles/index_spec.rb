@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Artists songs index' do
+RSpec.describe 'Maker vehicles index' do
   before :each do
     @toyota = Maker.create!(name: 'Toyota')
     @supra = @toyota.vehicles.create!(name: 'Supra')
