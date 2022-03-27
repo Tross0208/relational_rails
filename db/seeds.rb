@@ -7,3 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 @toyota = Maker.create!(name: "Toyota", usa_market?: true, market_share: 14.72)
+
+@supra = Vehicle.create!(name: "Supra", price: 43290, maker: @toyota)
+@gt86 = Vehicle.create!(name: "GT86", price: 27700, maker: @toyota)
