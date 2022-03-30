@@ -19,12 +19,16 @@ ActiveRecord::Schema.define(version: 2022_03_26_180947) do
     t.string "name"
     t.boolean "usa_market?"
     t.float "market_share"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "vehicles", force: :cascade do |t|
     t.string "name"
     t.integer "price"
     t.bigint "maker_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["maker_id"], name: "index_vehicles_on_maker_id"
   end
 

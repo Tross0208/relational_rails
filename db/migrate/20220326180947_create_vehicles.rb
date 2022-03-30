@@ -4,6 +4,7 @@ class CreateVehicles < ActiveRecord::Migration[5.2]
       t.string :name
       t.integer :price
       t.references :maker, foreign_key: true
+      t.timestamps
     end
   end
 end

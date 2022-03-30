@@ -4,7 +4,7 @@ class CreateMaker < ActiveRecord::Migration[5.2]
       t.string :name
       t.boolean :usa_market?
       t.float :market_share
-
+      t.timestamps
     end
   end
 end
