@@ -12,6 +12,7 @@ RSpec.describe 'Update existing Maker' do
     click_button 'Update Maker'
     expect(current_path).to eq ("/makers/#{@toyota.id}")
     expect(page).to have_content('Scion')
+    expect(page).to_not have_content('Toyota')
   end
 
 

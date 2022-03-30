@@ -1,7 +1,7 @@
 <%= link_to "Vehicles Index", "/vehicles"%>
 <%= link_to "Makers Index", "/makers" %>
 <h1>Maker Vehicles</h1>
-
+<%= link_to "Create Vehicle", "/makers/#{@maker.id}/vehicles/new" %>
 
 <% @maker.vehicles.each do |vehicle| %>
 <h3>Vehicle: <%= vehicle.name %></h3>

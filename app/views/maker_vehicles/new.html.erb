@@ -1,0 +1,8 @@
+<%= form_with url: "/makers/#{@maker.id}/vehicles", method: :post, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :price %>
+  <%= form.text_field :price %>
+
+  <%= form.submit "Create Vehicle" %>
+<% end %>
