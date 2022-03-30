@@ -6,5 +6,7 @@ get '/makers/:id', to: 'makers#show'
 get '/vehicles', to: 'vehicles#index'
 get '/vehicles/:id', to: 'vehicles#show'
 get '/makers/:id/vehicles', to: 'maker_vehicles#index'
+get '/makers/:id/edit', to: 'makers#edit'
 post '/makers', to: 'makers#create'
+patch '/makers/:id', to: 'makers#update'
 end

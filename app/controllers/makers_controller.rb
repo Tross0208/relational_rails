@@ -17,6 +17,16 @@ class MakersController < ApplicationController
   def new
   end
 
+  def edit
+    @maker = Maker.find(params[:id])
+  end
+
+  def update
+    maker = Maker.find(params[:id])
+    maker.update(maker_params)
+    redirect_to "/makers/#{maker.id}"
+  end
+
 private
 
   def maker_params
