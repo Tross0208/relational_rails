@@ -1,3 +1,6 @@
+<%= link_to "Vehicles Index", "/vehicles"%>
+<%= link_to "Makers Index", "/makers" %>
+<p><%= link_to "#{@maker.name} vehicles", "/makers/#{@maker.id}/vehicles" %></p>
 <h1><%= @maker.name %></h1>
 <p>Number of Vehicles: <%= @total_vehicles %></p>
 <p>Sold in USA?: <%= @maker.usa_market? %></p>
