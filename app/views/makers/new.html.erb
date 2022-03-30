@@ -1,0 +1,10 @@
+<%= form_with url: '/makers/', method: :post, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :usa_market? %>
+  <%= form.select :usa_market?, [true, false] %>
+  <%= form.label :market_share %>
+  <%= form.text_field :market_share %>
+
+  <%= form.submit "Create Maker" %>
+<% end %>
